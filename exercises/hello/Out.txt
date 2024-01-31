@@ -1,0 +1,3 @@
+Hello, LucaJanken!
+sin(1)=0.841471
+1=1

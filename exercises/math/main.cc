@@ -3,15 +3,15 @@
 #include "sfuns.h"
 
 int main() {
-  double result = sqrt(2);
-  double result2 = pow(2, 1.0/5.0);
-  double result3 = exp(M_PI);
-  double result4 = pow(M_PI, exp(1));
+  double sqrt_of_two = sqrt(2);
+  double fifth_root_of_two = pow(2, 1.0/5.0);
+  double exp_of_pi = exp(M_PI);
+  double pi_to_the_power_of_e = pow(M_PI, exp(1));
 
-  std::cout << "sqrt(2) = " << result << " (should be approximately 1.4142)" << std::endl;
-  std::cout << "2^(1/5) = " << result2 << " (should be approximately 1.1487)" << std::endl;
-  std::cout << "exp(pi) = " << result3 << " (should be approximately 23.1407)" << std::endl;
-  std::cout << "pi^(exp(1)) = " << result4 << " (should be approximately 22.4592)" << std::endl;
+  std::cout << "sqrt(2) = " << sqrt_of_two << " (should be approximately 1.4142)" << std::endl;
+  std::cout << "2^(1/5) = " << fifth_root_of_two << " (should be approximately 1.1487)" << std::endl;
+  std::cout << "exp(pi) = " << exp_of_pi << " (should be approximately 23.1407)" << std::endl;
+  std::cout << "pi^(exp(1)) = " << pi_to_the_power_of_e << " (should be approximately 22.4592)" << std::endl;
 
   std::cout << "Gamma(1) = " << my_gamma(1) << " (should be exactly 1)" << std::endl;
   std::cout << "Gamma(2) = " << my_gamma(2) << " (should be exactly 1)" << std::endl;

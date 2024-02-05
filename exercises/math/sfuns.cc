@@ -1,5 +1,6 @@
 #include <cmath>
-#include <limits> // Include for std::numeric_limits
+#include <limits>   // Include for std::numeric_limits
+#include "sfuns.h"   // Good practice to include the header file for the functions you are using
 
 double my_gamma(double x) {
     //single precision gamma function (formula from Wikipedia)

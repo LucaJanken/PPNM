@@ -1,0 +1,15 @@
+My max int = 2147483647, Should be = 2147483647
+My min int = -2147483648, Should be = -2147483648
+My double epsilon = 2.22045e-16, Should be = 2.22045e-16
+My float epsilon = 1.19209e-07, Should be = 1.19209e-07
+My sumA - 1 = 0.000000e+00, Should be = 1.110223e-10
+My sumB - 1 = 1.110223e-10, Should be = 1.110223e-10
+d1 == d2 ? => 0, Should be = 1
+
+The difference between sumA-1 and sumB-1 arises from floating-point arithmetic's limitations.
+In sumA, adding 1 before tiny values leads to precision loss due to rounding errors as tiny's effect
+becomes negligible. In sumB, adding tiny values before 1 accumulates more accurately. This demonstrates
+floating-point addition's non-associativity, where the order of operations affects the outcome due to
+limited precision.
+
+approx(d1, d2) ? => 1, Should be = 1

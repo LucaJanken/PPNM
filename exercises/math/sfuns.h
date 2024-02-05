@@ -1,5 +1,5 @@
-#ifndef SFUNS_H
-#define SFUNS_H
+#ifndef HAVE_SFUNS_H
+#define HAVE_SFUNS_H
 
 double my_gamma(double x);
 

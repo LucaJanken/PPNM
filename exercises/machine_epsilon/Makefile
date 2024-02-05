@@ -10,7 +10,7 @@ OUTPUT = Out.txt
 TARGET = main
 
 # Source files
-SRCS = main.cc sfuns.cc
+SRCS = main.cc math_utils.cc
 
 # Object files
 OBJS = $(SRCS:.cc=.o)

@@ -47,12 +47,22 @@ vec vec::cross(const vec& other) const {
     return vec(y * other.z - z * other.y, z * other.x - x * other.z, x * other.y - y * other.x);
 }
 
+// Static method for cross product
+vec vec::cross(const vec& v, const vec& w) {
+    return v.cross(w);
+}
+
 // Norm of the vector
 double vec::norm() const {
     return std::sqrt(dot(*this));
 }
 
-// Approximation method (to compare two vectors within absolute and relative precision)
+// Static method for norm
+double vec::norm(const vec& v) {
+    return v.norm();
+}
+
+// Static approximation method for two doubles
 bool vec::approx(double a, double b, double acc, double eps) {
     if (std::abs(a - b) < acc) {
         return true;
@@ -63,6 +73,7 @@ bool vec::approx(double a, double b, double acc, double eps) {
     return false;
 }
 
+// Approximation method for two vec objects
 bool vec::approx(const vec& other, double acc, double eps) const {
     if (!approx(x, other.x, acc, eps)) {
         return false;

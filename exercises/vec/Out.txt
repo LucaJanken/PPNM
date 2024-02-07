@@ -1,11 +1,12 @@
-v1: 1.000000 2.000000 3.000000
-v2: 4.000000 5.000000 6.000000
-v3 = v1 + v2: 5.000000 7.000000 9.000000
-v4 = v1 * 3.0: 3.000000 6.000000 9.000000
-v5 = 2.0 * v2: 8.000000 10.000000 12.000000
-v6 = v1 - v2: -3.000000 -3.000000 -3.000000
-v7 = -v1: -1.000000 -2.000000 -3.000000
-Dot product (v1 dot v2): 32
-Cross product (v1 cross v2): -3.000000 6.000000 -3.000000
-Norm of v1: 3.74166
-Approximation check (v1 approx v2): false
+Test Addition: 5.000000 7.000000 9.000000 == 5 7 9
+Test Subtraction: 5.000000 15.000000 25.000000 == 5 15 25
+Test Scalar Multiplication (Left): 2.000000 4.000000 6.000000 == 2 4 6
+Test Scalar Multiplication (Right): 2.000000 4.000000 6.000000 == 2 4 6
+Test Dot Product: 32 == 32
+Test Cross Product: -3.000000 6.000000 -3.000000 == -3 6 -3
+Test Norm: 5 == 5
+Test Static Dot Product: 32 == 32
+Test Static Cross Product: -3.000000 6.000000 -3.000000 == -3 6 -3
+Test Static Norm: 5 == 5
+Test Static Approximation: true == true
+All tests passed successfully.

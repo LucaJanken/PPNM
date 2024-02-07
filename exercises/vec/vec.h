@@ -41,10 +41,16 @@ class vec {
         // Cross product
         vec cross(const vec& other) const;
 
+        // Static method for cross product
+        static vec cross(const vec& v, const vec& w);
+
         // Norm of the vector
         double norm() const;
 
-        // Approximation method (to compare two vectors within absolute and relative precision)
+        // Static method for norm
+        static double norm(const vec& v);
+
+        // Approximation method (to compare two doubles for approximate equality)
         static bool approx(double a, double b, double acc = DEFAULT_ACC, double eps = DEFAULT_EPS);
 
         // Approximation method for two vec objects

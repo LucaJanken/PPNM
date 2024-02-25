@@ -1,0 +1,22 @@
+OpenMP's reduction operation automatically handles the thread-local storage aspect for the variable being reduced across threads, so no updates are lost.
+Running OpenMP with Thread-local Storage version
+Running with 1 threads
+Total Harmonic Sum: 18.9979
+real 0.57
+user 0.57
+sys 0.00
+Running with 2 threads
+Total Harmonic Sum: 18.9979
+real 0.29
+user 0.57
+sys 0.00
+Running with 3 threads
+Total Harmonic Sum: 18.9979
+real 0.19
+user 0.58
+sys 0.00
+Running with 4 threads
+Total Harmonic Sum: 18.9979
+real 0.14
+user 0.58
+sys 0.00

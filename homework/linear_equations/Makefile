@@ -29,6 +29,7 @@ $(OUTPUT): $(TARGET)
 # Plot target
 plot: $(PLOT_OUTPUT)
 	gnuplot -e "\
+	set terminal svg background "white"; \
 	set terminal svg size 800,600; \
 	set output 'benchmark_plot.svg'; \
 	set title 'QR Decomposition Benchmark'; \

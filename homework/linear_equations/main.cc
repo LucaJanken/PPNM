@@ -1,6 +1,8 @@
 #include "QRGS.h"
+#include <chrono>
 #include <iostream>
 #include <random>
+#include <fstream>
 
 // Function to generate random matrix
 matrix rnd_matrix(size_t n, size_t m) {
@@ -28,6 +30,18 @@ vector rnd_vec(size_t n) {
         b[i] = dis(gen);
     }
     return b;
+}
+
+// Benchmark function
+void benchmarkQRGS(size_t m, std::ofstream& outFile) {
+    matrix A = rnd_matrix(m, m);
+    
+    auto start = std::chrono::high_resolution_clock::now();
+    QRGS qrgs(A);
+    auto end = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double> elapsed = end - start;
+    outFile << m << " " << elapsed.count() << std::endl;
 }
 
 // Main function
@@ -121,6 +135,18 @@ int main() {
         std::cout << "AB equals I. \n";
     } else {
         std::cout << "AB does not equal I. \n";
+    }
+
+    // Benchmark
+    std::ofstream benchmarkFile("benchmark.csv");
+    if (benchmarkFile.is_open()) {
+        benchmarkFile << "m, time" << std::endl;
+        for (size_t m = 3; m <= 300; m += 1) {
+            benchmarkQRGS(m, benchmarkFile);
+        }
+        benchmarkFile.close();
+    } else {
+        std::cout << "Unable to open file. \n";
     }
 
     return 0;

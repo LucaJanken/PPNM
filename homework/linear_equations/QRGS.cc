@@ -6,9 +6,7 @@
 
 
 QRGS::QRGS(const matrix& M) : A(M.copy()), Q(M.copy()), R(matrix(M.size2, M.size2)) {
-    size_t m = M.size2; // Number of columns
-
-    // Initialization of R and modification of Q for QR decomposition
+    size_t m = M.size2;
     for (size_t i = 0; i < m; ++i) {
         R(i, i) = Q[i].norm();
         Q.setCol(i, Q[i] / R(i, i));
@@ -19,12 +17,8 @@ QRGS::QRGS(const matrix& M) : A(M.copy()), Q(M.copy()), R(matrix(M.size2, M.size
     }
 }
 
-
 vector QRGS::solve(const vector& r) const {
-    // Compute y = Q^Tb
-    vector y = Q.transpose() * r; // Assuming matrix-vector multiplication is defined
-
-    // Now solve Rx = y using back substitution
+    vector y = Q.transpose() * r;
     vector x(R.size2);
     for (std::ptrdiff_t i = R.size2 - 1; i >= 0; i--) {
         double sum = 0;

@@ -31,6 +31,16 @@ struct vector {
         return data[i];
     }
 
+    void set(size_t i, double x) {
+        assert(i < size);
+        data[i] = x;
+    }
+    
+    double get(size_t i) const {
+        assert(i < size);
+        return data[i];
+    }
+
     double dot(const vector&) const;
     double norm() const;
 

@@ -12,7 +12,7 @@ Here is an overview of the assignments and my progress in the course:
 | 2  | EVD           | 6  | 3  | 1  | 10   |
 | 3  | LeastSquares  |-  | -  | -  | -   |
 | ...| ...           | ...| ...| ...| ... |
-| **Total Points** | | | | **20** |
+| **Total Points** | | | | | **20** |
 
 **Note:** The table above will be updated as I progress through the course. Each entry represents the points achieved in different parts of the homework, contributing to the final grade.
 

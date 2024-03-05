@@ -6,19 +6,13 @@ This repository is dedicated to the course "Practical Programming and Numerical 
 
 Here is an overview of the assignments and my progress in the course:
 
- ======================================
-| #  | homework      | A | B | C | Σ   |
- ======================================
-| 1  | LinEq         | 6 | 3 | 1 | 10  |
----------------------------------------
-| 2  | EVD           | 6 | - | - |  6  |
----------------------------------------
-| 3  | LeastSquares  | 6 | 3 | - |  9  |
----------------------------------------
-|              ...                     |
- ======================================
-|                    total points: 95  |
- ======================================
+ | #  | Homework      | A  | B  | C  | Σ   |
+|----|---------------|----|----|----|-----|
+| 1  | LinEq         | 6  | 3  | 1  | 10  |
+| 2  | EVD           | 6  | -  | -  | 6   |
+| 3  | LeastSquares  | 6  | 3  | -  | 9   |
+| ...| ...           | ...| ...| ...| ... |
+| **Total Points** | | | | **95** |
 
 **Note:** The table above will be updated as I progress through the course. Each entry represents the points achieved in different parts of the homework, contributing to the final grade.
 

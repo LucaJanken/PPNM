@@ -1,6 +1,6 @@
 # PPNM - Practical Programming and Numerical Methods
 
-This repository is dedicated to the course "Practical Programming and Numerical Methods", which focuses on applying programming techniques and numerical methods to solve mathematical problems. The course is conducted in C#, offering students the flexibility to choose a programming language of their choice for completing the assignments. I have chosen C++ for this purpose.
+This repository is dedicated to the course "Practical Programming and Numerical Methods", which focuses on applying programming techniques and numerical methods to solve mathematical problems. The course is offering students the flexibility to choose a programming language of their choice for completing the assignments. I have chosen C++ for this purpose.
 
 ## Overview of Completed Work
 

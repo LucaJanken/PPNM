@@ -92,7 +92,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Generate a random symmetric matrix
-    int m = 2;
+    int m = 5;
     matrix A = rnd_symmetric_matrix(m);
     A.print("A:");
 
@@ -147,7 +147,6 @@ int main(int argc, char* argv[]) {
 
     // Generate Hamiltonian matrix
     matrix H = Hamiltonian(rmax, dr);
-    H.print("H:");
 
     // Perform JDWCS
     std::pair<matrix, matrix> result2 = JDWCS::cyclic(H);

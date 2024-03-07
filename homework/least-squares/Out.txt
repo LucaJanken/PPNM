@@ -1,0 +1,8 @@
+c:
+    4.959    0.1706 
+Uncertainties: 0.0268236 0.00341594
+a = 142.404
+tau = 4.06242 pm 0.0813307 days, table value: 3.6313(14) days
+covariance matrix:
+0.0007195 9.109e-05 
+9.109e-05 1.167e-05 

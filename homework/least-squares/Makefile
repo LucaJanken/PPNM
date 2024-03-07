@@ -32,13 +32,14 @@ $(TARGET): $(OBJS)
 
 # Variables extracted from Out.txt
 A = $(shell grep 'a =' Out.txt | awk '{print $$3}')
-B = $(shell awk '/c:/{getline; print $$1}' Out.txt)
+B = $(shell awk '/c:/{getline; print $$2}' Out.txt)
 DA = $(shell grep 'Uncertainties:' Out.txt | awk '{print $$2}')
 DB = $(shell grep 'Uncertainties:' Out.txt | awk '{print $$3}')
 
 
 # Rule to generate the plot
 datafit.svg: $(DATAFILE) Out.txt
+	@echo "A = $(A), B = $(B), DA = $(DA), DB = $(DB)"
 	gnuplot -e "\
 	set terminal svg size 800,600 background 'white'; \
 	set output 'datafit.svg'; \

@@ -1,24 +1,18 @@
 # PPNM - Practical Programming and Numerical Methods
 
-This repository is dedicated to the course "Practical Programming and Numerical Methods", which focuses on applying programming techniques and numerical methods to solve mathematical problems. The course is conducted in C#, offering students the flexibility to choose a programming language of their choice for completing the assignments. I have chosen C++ for this purpose.
+This repository is dedicated to the course "Practical Programming and Numerical Methods", which focuses on applying programming techniques and numerical methods to solve mathematical problems. The course is offering students the flexibility to choose a programming language of their choice for completing the assignments. I have chosen C++ for this purpose.
 
 ## Overview of Completed Work
 
 Here is an overview of the assignments and my progress in the course:
 
- ======================================
-| #  | homework      | A | B | C | Σ   |
- ======================================
-| 1  | LinEq         | 6 | 3 | 1 | 10  |
----------------------------------------
-| 2  | EVD           | 6 | - | - |  6  |
----------------------------------------
-| 3  | LeastSquares  | 6 | 3 | - |  9  |
----------------------------------------
-|              ...                     |
- ======================================
-|                    total points: 95  |
- ======================================
+ | #  | Homework      | A  | B  | C  | Σ   |
+|----|---------------|----|----|----|-----|
+| 1  | Linear Equations         | 6  | 3  | 1  | 10  |
+| 2  | Eigenvalues           | 6  | 3  | 1  | 10   |
+| 3  | Least-Squares  |-  | -  | -  | -   |
+| ...| ...           | ...| ...| ...| ... |
+| **Total Points** | | | | | **20** |
 
 **Note:** The table above will be updated as I progress through the course. Each entry represents the points achieved in different parts of the homework, contributing to the final grade.
 

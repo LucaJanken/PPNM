@@ -9,9 +9,10 @@ vector::vector() { // default constructor
     data = nullptr;
 }
 
-vector::vector(size_t n) { // parameterized constructor
-    size = n;
-    data = new double[size](); // initialize to zero
+vector::vector(size_t n, double init_value /* = 0.0 */): size(n), data(new double[n]) {
+    for (size_t i = 0; i < size; ++i) {
+        data[i] = init_value;
+    }
 }
 
 vector::vector(const vector& other) { // copy constructor
@@ -120,6 +121,19 @@ void vector::print(const char* s) const {
     printf("%s\n", s);
     for (size_t i=0; i<size; i++) printf("%9.4g ", (*this)[i]);
     printf("\n");
+}
+
+void vector::resize(size_t new_size, double init_value) {
+    double* new_data = new double[new_size];
+    for (size_t i = 0; i < std::min(size, new_size); ++i) {
+        new_data[i] = data[i];
+    }
+    for (size_t i = size; i < new_size; ++i) {
+        new_data[i] = init_value;
+    }
+    delete[] data;
+    data = new_data;
+    size = new_size;
 }
 
 bool compare(const vector& a, const vector& b, double tol) {

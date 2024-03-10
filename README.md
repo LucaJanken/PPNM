@@ -11,8 +11,9 @@ Here is an overview of the assignments and my progress in the course:
 | 1  | Linear Equations         | 6  | 3  | 1  | 10  |
 | 2  | Eigenvalues           | 6  | 3  | 1  | 10   |
 | 3  | Least-Squares  |6  | 3  | 1  | 10   |
+| 4  | Splines  |6  | 3  | 1  | 10   |
 | ...| ...           | ...| ...| ...| ... |
-| **Total Points** | | | | | **30** |
+| **Total Points** | | | | | **40** |
 
 **Note:** The table above will be updated as I progress through the course. Each entry represents the points achieved in different parts of the homework, contributing to the final grade.
 

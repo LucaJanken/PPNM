@@ -7,7 +7,7 @@ struct vector {
     
     size_t size; double* data;
 
-    vector(size_t);         // parameterized constructor
+    vector(size_t, double init_value = 0.0);         // parameterized constructor
     vector(const vector&);  // copy constructor
     vector(vector&&);       // move constructor
     vector();               // default constructor
@@ -52,6 +52,7 @@ struct vector {
     vector& operator/=(double);
 
     void print(const char* s="") const;
+    void resize(size_t new_size, double init_value = 0.0);
 
 };
 

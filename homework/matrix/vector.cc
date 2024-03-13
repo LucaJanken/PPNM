@@ -158,3 +158,8 @@ double vector::norm() const {
     for (size_t i=0; i<size; i++) sum += data[i] * data[i];
     return sqrt(sum);
 }
+
+// Constructor that accepts a std::vector<double>
+vector::vector(const std::vector<double>& init_values) : size(init_values.size()), data(new double[init_values.size()]) {
+    std::copy(init_values.begin(), init_values.end(), data);
+}

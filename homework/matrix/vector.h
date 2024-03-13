@@ -2,6 +2,8 @@
 #define HAVE_VECTOR_H
 #include <cstdlib>
 #include <cassert>
+#include <vector>
+#include <algorithm>
 
 struct vector {
     
@@ -41,6 +43,19 @@ struct vector {
         return data[i];
     }
 
+    double* begin() {
+        return data;
+    }
+
+    double* end() {
+        return data + size;
+    }
+
+    void push_back(double x) {
+        resize(size + 1, x);
+    }
+         
+
     double dot(const vector&) const;
     double norm() const;
 
@@ -53,6 +68,9 @@ struct vector {
 
     void print(const char* s="") const;
     void resize(size_t new_size, double init_value = 0.0);
+
+    // Constructor that accepts a std::vector<double>
+    vector(const std::vector<double>& init_values);
 
 };
 

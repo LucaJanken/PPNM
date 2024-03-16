@@ -1,0 +1,16 @@
+Integral of sqrt(x) over [0, 1]: 0.666954 Expected: 2/3 Error: 0.000287242
+Integral of 1/sqrt(x) over [0, 1]: 1.99996 Expected: 2 Error: 3.84999e-05
+Integral of 4*sqrt(1-x^2) over [0, 1]: 3.14183 Expected: pi Error: 0.000241924
+Integral of ln(x)/sqrt(x) over [0, 1]: -3.99992 Expected: -4 Error: 8.2941e-05
+Plot and Comparison data of erf(x) written to erf_plot.csv and diff.csv
+Standard integration of 1/sqrt(x): Result = 1.99996 Expected: 2, Evaluations = 8572
+Clenshaw-Curtis transformation of 1/sqrt(x): Result = 1.99999 Expected: 2, Evaluations = 68
+Standard integration of ln(x)/sqrt(x): Result = -3.99992 Expected: -4, Evaluations = 8604
+Clenshaw-Curtis transformation of ln(x)/sqrt(x): Result = -3.99984 Expected: -4, Evaluations = 128
+exp(-x) from 0 to infinity: Result = 1 Expected: 1, Evaluations = 2812, Error = 1.93539e-10
+exp(-x^2) from -infinity to infinity: Result = 1.77245 Expected: sqrt(pi) = 1.772453851, Evaluations = 7488, Error = 1.03286e-09
+(Python) Integral of 1/sqrt(x) over [0, 1]: Result = 1.9999999999999984, Evaluations = 231
+(Python) Integral of ln(x)/sqrt(x) over [0, 1]: Result = -4.000000000000071, Evaluations = 315
+(Python) Integral of exp(-x) over [0, inf]: Result = 1.0000000000000002, Evaluations = 135, Error = 5.842606742906004e-11
+(Python) Integral of exp(-x^2) over [-inf, inf]: Result = 1.7724538509055159, Evaluations = 270, Error = 1.4202636780944923e-08
+The C++ implementation seemingly requires more evaluations than numpy for these infinite limits, could perhaps be improved using the Clenshaw–Curtis variable transformation again.

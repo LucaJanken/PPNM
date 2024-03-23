@@ -14,8 +14,9 @@ Here is an overview of the assignments and my progress in the course:
 | 4  | Splines  |6  | 3  | 1  | 10   |
 | 5  | ODE  |6  | 3  | 1  | 10   |
 | 6  | Integration  |6  | 3  | 1  | 10   |
+| 7  | Monte Carlo  |6  | 3  | 1  | 10   |
 | ...| ...           | ...| ...| ...| ... |
-| **Total Points** | | | | | **60** |
+| **Total Points** | | | | | **70** |
 
 **Note:** The table above will be updated as I progress through the course. Each entry represents the points achieved in different parts of the homework, contributing to the final grade.
 

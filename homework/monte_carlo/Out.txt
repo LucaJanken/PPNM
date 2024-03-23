@@ -1,0 +1,9 @@
+Estimated area of circle: 3.14288, Estimated error: 0.0103804, Actual error: 0.00128735
+Estimated area of ellipse: 6.3008, Estimated error: 0.0206943, Actual error: 0.0176147
+Estimated area of circle (quasi): 3.14144, Estimated error: 0.00096, Actual error: 0.000152654
+Estimated area of ellipse (quasi): 6.28288, Estimated error: 0.00192, Actual error: 0.000305307
+Estimated area of circle (strat): 3.13985, Estimated error: 0.00974022, Actual error: 0.00173792
+Estimated area of ellipse (strat): 6.25231, Estimated error: 0.019326, Actual error: 0.0308783
+Estimated integral (singular): 1.34246, Estimated error: 0.0141682, Actual error: 0.0507476
+Estimated integral (singular, quasi): 1.34637, Estimated error: 0.0266172, Actual error: 0.046833
+Estimated integral (singular, strat): 1.4093, Estimated error: 0.0234341, Actual error: 0.0160977

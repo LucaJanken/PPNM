@@ -1,0 +1,62 @@
+
+
+*******************************************************************************
+Sat Mar 23 21:27:55 2024
+
+
+FIT:    data read from 'circle_data.csv' using 1:4
+        format = x:z
+        x range restricted to [100.000 : 25000.0]
+        #datapoints = 250
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a/sqrt(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 6.7861590414e-02   0.00e+00  1.56e-02    1.000000e+00
+   2 6.3862162987e-02  -9.94e-02  1.56e-04    1.256041e+00
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 0.0638622
+rel. change during last iteration : -9.94047e-07
+
+degrees of freedom    (FIT_NDF)                        : 249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0160148
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000256475
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.25604          +/- 0.06484      (5.162%)
+
+
+*******************************************************************************
+Sat Mar 23 21:27:55 2024
+
+
+FIT:    data read from 'ellipse_data.csv' using 1:4
+        format = x:z
+        x range restricted to [100.000 : 25000.0]
+        #datapoints = 250
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a/sqrt(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.5719455742e-01   0.00e+00  1.56e-02    1.000000e+00
+   3 2.4788668829e-01  -2.15e-09  1.56e-05    2.852268e+00
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.247887
+rel. change during last iteration : -2.1498e-14
+
+degrees of freedom    (FIT_NDF)                        : 249
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.031552
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000995529
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.85227          +/- 0.1277       (4.479%)

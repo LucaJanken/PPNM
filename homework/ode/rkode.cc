@@ -2,7 +2,7 @@
 #include <iostream>
 #include "../splines/spline.h"
 
-// RK12 (Euler/Midpoint) method
+// Runge-Kutta 4th order step
 std::pair<vector, vector> rkstep4 (
     const std::function<vector(double, const vector&)>& f,  // Function dy/xy = f(x, y)
     double x,                                               // Current x
@@ -37,29 +37,45 @@ std::pair<vector, std::vector<vector>> driver(
     std::vector<vector> ylist;
     ylist.push_back(y);
     
-    int nsteps = 0; // Initialize step counter
+    int nsteps = 0;
     while(x < b && nsteps < nmax) {
         if (x + h > b) h = b - x;
 
         std::pair<vector, vector> step = rkstep4(F, x, y, h);
         vector yh = step.first;
-        vector deltaY = step.second;
+        vector dy = step.second;
+        vector absErr(dy.size);
+        for (size_t i = 0; i < dy.size; ++i) {
+            absErr[i] = std::abs(dy[i]);
+        }
 
-        double tol = (acc + eps * yh.norm()) * std::sqrt(h / (b - a));
-        double err = deltaY.norm();
         
-        if (err <= tol) {
+        vector tol(y.size);
+        for (size_t i = 0; i < y.size; ++i) {
+            tol[i] = acc + eps * std::abs(yh[i]);
+        }
+
+        double maxErrRatio = 0;
+        for (size_t i = 0; i < absErr.size; ++i) {
+            double errRatio = absErr[i] / tol[i]; 
+            maxErrRatio = std::max(maxErrRatio, errRatio);
+        }
+
+        if (maxErrRatio <= 1.0) {
             x += h;
             y = yh;
             xlist.push_back(x);
             ylist.push_back(y);
         }
 
-        h = std::min(std::pow(tol / err, 0.25) * 0.95, 2.0) * h;
+        if (maxErrRatio > 0) {
+            h *= std::min(std::pow(1.0 / maxErrRatio, 0.25) * 0.95, 2.0);
+        }
+
         nsteps++;
     }
 
-    return {xlist, ylist}; 
+    return {xlist, ylist};
 }
 
 
@@ -73,7 +89,6 @@ std::function<vector(double)> driver_interp(
     double eps,
     int nmax) {
     
-    // Run the original ODE solver to generate xlist and ylist
     std::pair<vector, std::vector<vector>> solution = driver(F, interval, ystart, h, acc, eps, nmax);
     vector xlist = solution.first;
     std::vector<vector> ylist = solution.second;

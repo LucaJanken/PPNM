@@ -1,0 +1,16 @@
+Testing simple one-dimensional function x^2 - 2
+Initial guess: -2, Solution found at: -1.41422
+Initial guess: -1, Solution found at: -1.41422
+Initial guess: 1, Solution found at: 1.41422
+Initial guess: 2, Solution found at: 1.41422
+Testing simple two-dimensional function 2x1 + 3x2 = 5, 3x1 - x2 = 2
+Initial guess: (0, 0), Solution found at: (0.999983, 1.00013)
+Initial guess: (2, 0), Solution found at: (1.00005, 0.999997)
+Initial guess: (0, 2), Solution found at: (1.00005, 1.00005)
+Initial guess: (2, 2), Solution found at: (1, 1)
+Testing Rosenbrock function...
+Initial guess: (0, 0), Solution found at: (1, 0.999999)
+Initial guess: (2, 0), Solution found at: (1, 1)
+Initial guess: (0, 2), Solution found at: (1, 1)
+Initial guess: (2, 2), Solution found at: (1, 1.00001)
+Lowest energy level found: E0 = -0.499967

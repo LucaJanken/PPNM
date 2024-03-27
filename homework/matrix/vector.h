@@ -62,6 +62,7 @@ struct vector {
 
     vector& operator+=(const vector&);
     vector& operator-=(const vector&);
+    vector& operator-();
     vector& operator*=(const vector&);
     vector& operator*=(double);
     vector& operator/=(double);

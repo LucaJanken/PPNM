@@ -59,6 +59,7 @@ struct matrix {
     bool isUpTri(double tol = 1e-9) const;
     bool isLowTri(double tol = 1e-9) const;
     void setCol(size_t, const vector&);
+    vector getCol(size_t) const;
 
     void print(std::string s="") const;
 

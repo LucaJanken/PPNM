@@ -15,8 +15,9 @@ Here is an overview of the assignments and my progress in the course:
 | 5  | ODE  |6  | 3  | 1  | 10   |
 | 6  | Integration  |6  | 3  | 1  | 10   |
 | 7  | Monte Carlo  |6  | 3  | 1  | 10   |
+| 8  | Roots  |6  | 3  | 0.5  |  9.5  |
 | ...| ...           | ...| ...| ...| ... |
-| **Total Points** | | | | | **70** |
+| **Total Points** | | | | | **79.5** |
 
 **Note:** The table above will be updated as I progress through the course. Each entry represents the points achieved in different parts of the homework, contributing to the final grade.
 

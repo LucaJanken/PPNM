@@ -220,3 +220,12 @@ void matrix::setCol(size_t i, const vector& v) {
         this->data[i * size1 + j] = v[j];
     }
 }
+
+// Get the i-th column of the matrix as a vector
+vector matrix::getCol(size_t i) const {
+    vector v(size1);
+    for (size_t j = 0; j < size1; ++j) {
+        v[j] = this->data[i * size1 + j];
+    }
+    return v;
+}

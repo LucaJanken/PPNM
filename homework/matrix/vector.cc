@@ -62,6 +62,11 @@ vector& vector::operator-=(const vector& other) { // subtraction assignment
     return *this;
 }
 
+vector& vector::operator-() { // unary negation
+    for (size_t i=0; i<(*this).size; i++) data[i] = -data[i];
+    return *this;
+}
+
 vector& vector::operator*=(const vector& other) { // dot product assignment
     assert(size == other.size);
     for (size_t i=0; i<(*this).size; i++) data[i] *= other.data[i];

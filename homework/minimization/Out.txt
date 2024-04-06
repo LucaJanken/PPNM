@@ -1,0 +1,26 @@
+Starting Rosenbrock's valley optimization...
+Expect minimum at (1, 1)
+Quasi-Newton iterations: 24
+Found minimum of Rosenbrock's valley function with (x0, y0) = (0.0, 0.0) at: (0.999966, 0.999931)
+Quasi-Newton iterations: 36
+Found minimum of Rosenbrock's valley function with (x0, y0) = (2.0, 0.0) at: (0.999968, 0.999937)
+Quasi-Newton iterations: 30
+Found minimum of Rosenbrock's valley function with (x0, y0) = (0.0, 2.0) at: (0.999833, 0.999663)
+Quasi-Newton iterations: 42
+Found minimum of Rosenbrock's valley function with (x0, y0) = (2.0, 2.0) at: (0.999967, 0.999933)
+Starting Himmelblau's function optimization...
+Expect minima at (-3.779310, -3.283186), (3.584428, -1.848126), (3.0, 2.0), (-2.805118, 3.131312)
+Quasi-Newton iterations: 7
+Found minimum of Himmelblau's function with (x0, y0) = (-2.0, -2.0) at: (-3.77931, -3.28319)
+Quasi-Newton iterations: 7
+Found minimum of Himmelblau's function with (x0, y0) = (4.0, -2.0) at: (3.58443, -1.84813)
+Quasi-Newton iterations: 8
+Found minimum of Himmelblau's function with (x0, y0) = (4.0, 2.0) at: (3, 2.00001)
+Quasi-Newton iterations: 8
+Found minimum of Himmelblau's function with (x0, y0) = (-3.0, 4.0) at: (-2.80513, 3.13131)
+Quasi-Newton iterations: 18
+Fitting parameters (m, Γ, A):
+125.972 2.08632 9.87614
+Quasi-Newton iterations: 131
+Fitting parameters (m, Γ, A) with SR1 update:
+125.972 2.07688 9.82987

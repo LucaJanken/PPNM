@@ -1,0 +1,35 @@
+Investigating Scaling of the Method:
+Matrix size: 1x1, Time: 6.933e-06 seconds
+Matrix size: 2x2, Time: 8.4329e-05 seconds
+Matrix size: 3x3, Time: 0.000650412 seconds
+Matrix size: 4x4, Time: 0.118566 seconds
+Matrix size: 5x5, Time: 0.0146505 seconds
+Matrix size: 6x6, Time: 0.00212423 seconds
+Matrix size: 7x7, Time: 0.00348802 seconds
+Matrix size: 8x8, Time: 0.00745691 seconds
+Matrix size: 9x9, Time: 0.0133192 seconds
+Matrix size: 10x10, Time: 0.0176228 seconds
+Matrix size: 11x11, Time: 0.010591 seconds
+Matrix size: 12x12, Time: 0.0208523 seconds
+Matrix size: 13x13, Time: 0.0297892 seconds
+Matrix size: 14x14, Time: 0.0746938 seconds
+Matrix size: 15x15, Time: 0.152041 seconds
+Matrix size: 16x16, Time: 0.174304 seconds
+Matrix size: 17x17, Time: 0.100464 seconds
+Matrix size: 18x18, Time: 0.401177 seconds
+Matrix size: 19x19, Time: 0.372726 seconds
+Matrix size: 20x20, Time: 0.32135 seconds
+Matrix size: 21x21, Time: 0.627898 seconds
+Matrix size: 22x22, Time: 0.245155 seconds
+Matrix size: 23x23, Time: 0.430635 seconds
+Retrying due to non-convergence...
+Matrix size: 24x24, Time: 0.477644 seconds
+Retrying due to non-convergence...
+Matrix size: 25x25, Time: 0.498889 seconds
+Matrix size: 26x26, Time: 0.499562 seconds
+Retrying due to non-convergence...
+Matrix size: 27x27, Time: 1.53684 seconds
+Matrix size: 28x28, Time: 0.586114 seconds
+Matrix size: 29x29, Time: 1.88497 seconds
+Retrying due to non-convergence...
+Matrix size: 30x30, Time: 0.639244 seconds

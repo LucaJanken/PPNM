@@ -1,0 +1,85 @@
+--------------------Test Eigenvalue Problem--------------------
+
+Test Matrix H:
+        4         1         1 
+        1         3         1 
+        1         1         2 
+
+Step 1: Finding the smallest eigenvalue and corresponding eigenvector of the matrix H using the Rayleigh Quotient method...
+Newton's method iterations: 229
+
+Step 2: Output the smallest eigenvalue.
+Smallest Eigenvalue: 1.324869129
+
+Step 3: Output the corresponding eigenvector.
+Corresponding Eigenvector: -0.172147674 -0.427132160 0.887650436 
+
+Step 4: Verify and output the normalization of the eigenvector.
+Norm of the Eigenvector: 1.000000000 (should be close to 1.0)
+
+Step 5: Compute the product H * v, where v is the eigenvector.
+H * v: -0.228072420 -0.565893717 1.176021038 
+
+Step 6: Compute the product lambda * v, where lambda is the smallest eigenvalue and v is the eigenvector.
+lambda * v: -0.228073139 -0.565894213 1.176020660 
+
+Step 7: Verification.
+The values of 'H * v' and 'lambda * v' should be close to each other.
+'H * v' represents the matrix-vector multiplication of H with the eigenvector v.
+'lambda * v' represents the scalar multiplication of the eigenvalue with the eigenvector v.
+If the values match closely, it confirms that the computed eigenpair is correct.
+
+--------------------Investigate Scaling of the Method (See scaling_results.txt)--------------------
+
+Newton's method iterations: 0
+Newton's method iterations: 26
+Newton's method iterations: 93
+Newton's method iterations: 8803
+Newton's method iterations: 666
+Newton's method iterations: 63
+Newton's method iterations: 67
+Newton's method iterations: 104
+Newton's method iterations: 129
+Newton's method iterations: 127
+Newton's method iterations: 62
+Newton's method iterations: 91
+Newton's method iterations: 99
+Newton's method iterations: 215
+Newton's method iterations: 378
+Newton's method iterations: 334
+Newton's method iterations: 161
+Newton's method iterations: 552
+Newton's method iterations: 439
+Newton's method iterations: 321
+Newton's method iterations: 547
+Newton's method iterations: 202
+Newton's method iterations: 305
+Newton's method iterations: 283
+Newton's method iterations: 254
+Newton's method iterations: 226
+Newton's method iterations: 627
+Newton's method iterations: 209
+Newton's method iterations: 606
+Newton's method iterations: 175
+
+--------------------Calculate Ground State Energy of Hydrogen Atom--------------------
+
+
+Step 8: Generating the Hamiltonian matrix for the Hydrogen atom (rmax = 13,  dr = 0.300000000)...
+
+Step 9: Finding the smallest eigenvalue and corresponding eigenvector of the Hydrogen atom Hamiltonian...
+Newton's method iterations: 340
+
+Step 10: Output the smallest eigenvalue of the Hydrogen atom in Hartree and eV.
+Smallest Eigenvalue of Hydrogen: -0.489229449 Hartree (-13.312617779 eV, should be close to -13.6 eV)
+
+Step 11: Verify the normalization of the eigenvector of the Hydrogen atom.
+Norm of the Eigenvector of Hydrogen: 1.000000000 (should be close to 1.0)
+
+--------------------Calculate Second Smallest Eigenergy of Hydrogen Atom--------------------
+
+
+Step 12: Finding the second smallest eigenvalue and corresponding eigenvector for the Hydrogen atom Hamiltonian...
+Newton's method iterations: 863
+Second Smallest Eigenvalue of Hydrogen: -0.122221888 Hartree (-3.325828567 eV, should be close to -3.4 eV)
+Norm of the Eigenvector of Hydrogen (Second Smallest Eigenvalue): 1.000000000 (should be close to 1.0)

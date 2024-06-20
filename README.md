@@ -20,15 +20,15 @@ Here is an overview of the assignments and my progress in the course:
 | 10  | Neural Network  |6  | 3  | 0  |  9  |
 | **Total Points** | | | | | **98.5** |
 
-**Note:** The table above will be updated as I progress through the course. Each entry represents the points achieved in different parts of the homework, contributing to the final grade.
-
 ## Course Structure
 
 The course spans several weeks, focusing initially on practical exercises and later shifting towards more comprehensive homework problems. Here's a brief overview:
 
 - **Exercises Folder:** Contains 8 exercises covering the first 4 to 5 weeks of the course. Completion of these exercises is mandatory for eligibility to attend the final exam.
   
-- **Homeworks Folder:** The latter part of the course is dedicated to homework problems. These assignments contribute up to 60% of the final grade, depending on the number of problems solved in each homework set.
+- **Homeworks Folder:** The latter part of the course is dedicated to homework problems. These assignments contribute up to 70% of the final grade, depending on the number of problems solved in each homework set.
+
+- **Exam Folder:** Contains the solution of exam problem 3: "Eigenvalues with Rayleigh quotient and locally optimized gradient descent", in accordance with my index from the wiki page. A seperate dedicated README.md is also found in this folder.
 
 ## How to Use This Repository
 

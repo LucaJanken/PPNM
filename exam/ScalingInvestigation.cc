@@ -22,7 +22,7 @@ void investigate_scaling() {
 
     for (int size = 1; size <= 30; ++size) {
         bool converged = false;
-        int max_retries = 2;
+        int max_retries = 4;
         int retries = 0;
 
         while (!converged && retries < max_retries) {

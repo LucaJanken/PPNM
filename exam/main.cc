@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <chrono>
+#include <fstream>
 #include "EigenSolver.h"
 #include "HydrogenHamiltonian.h"
 #include "ScalingInvestigation.h"
@@ -111,7 +112,7 @@ int main() {
 
     // Find the second smallest eigenvalue and corresponding eigenvector for Hydrogen
     std::cout << "\nStep 12: Finding the second smallest eigenvalue and corresponding eigenvector for the Hydrogen atom Hamiltonian...\n";
-    auto second_eigenpairHyd = FindSecondEigenPair(Hyd, eigenpairHyd.second, 1e-6, 10.0);
+    auto second_eigenpairHyd = FindSecondEigenPair(Hyd, eigenpairHyd.second, 1e-6, 15.0);
 
     // Convert the second smallest eigenvalue to eV
     double secondEigenvalueHartree = second_eigenpairHyd.first;
@@ -128,6 +129,20 @@ int main() {
     }
     normSecondHyd = std::sqrt(normSecondHyd);
     std::cout << "Norm of the Eigenvector of Hydrogen (Second Smallest Eigenvalue): " << normSecondHyd << " (should be close to 1.0)" << std::endl;
+
+    // Write both wavefunctions to the CSV file
+
+    std::cout << "\nStep 13: Writing the wavefunctions of the smallest and second smallest eigenvalues to wavefunction.csv...\n";
+
+    std::ofstream wavefunction_file("wavefunctions.csv");
+    if (wavefunction_file.is_open()) {
+        for (size_t i = 0; i < eigenpairHyd.second.size; ++i) {
+            wavefunction_file << i * dr << " " << eigenpairHyd.second[i] * eigenpairHyd.second[i] << " " << second_eigenpairHyd.second[i] * second_eigenpairHyd.second[i] << "\n";
+        }
+        wavefunction_file.close();
+    } else {
+        std::cerr << "Failed to open wavefunction.csv for writing." << std::endl;
+    }
 
     return 0;
 }

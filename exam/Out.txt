@@ -32,35 +32,35 @@ If the values match closely, it confirms that the computed eigenpair is correct.
 --------------------Investigate Scaling of the Method (See scaling_results.txt)--------------------
 
 Newton's method iterations: 0
-Newton's method iterations: 26
-Newton's method iterations: 93
-Newton's method iterations: 8803
-Newton's method iterations: 666
-Newton's method iterations: 63
-Newton's method iterations: 67
-Newton's method iterations: 104
-Newton's method iterations: 129
-Newton's method iterations: 127
-Newton's method iterations: 62
-Newton's method iterations: 91
-Newton's method iterations: 99
-Newton's method iterations: 215
-Newton's method iterations: 378
-Newton's method iterations: 334
-Newton's method iterations: 161
-Newton's method iterations: 552
-Newton's method iterations: 439
-Newton's method iterations: 321
-Newton's method iterations: 547
-Newton's method iterations: 202
-Newton's method iterations: 305
-Newton's method iterations: 283
-Newton's method iterations: 254
+Newton's method iterations: 8
+Newton's method iterations: 85
+Newton's method iterations: 36
+Newton's method iterations: 95
+Newton's method iterations: 47
 Newton's method iterations: 226
-Newton's method iterations: 627
-Newton's method iterations: 209
-Newton's method iterations: 606
-Newton's method iterations: 175
+Newton's method iterations: 117
+Newton's method iterations: 160
+Newton's method iterations: 57
+Newton's method iterations: 362
+Newton's method iterations: 221
+Newton's method iterations: 117
+Newton's method iterations: 119
+Newton's method iterations: 373
+Newton's method iterations: 161
+Newton's method iterations: 158
+Newton's method iterations: 379
+Newton's method iterations: 249
+Newton's method iterations: 229
+Newton's method iterations: 486
+Newton's method iterations: 190
+Newton's method iterations: 293
+Newton's method iterations: 232
+Newton's method iterations: 113
+Newton's method iterations: 277
+Newton's method iterations: 571
+Newton's method iterations: 156
+Newton's method iterations: 200
+Newton's method iterations: 260
 
 --------------------Calculate Ground State Energy of Hydrogen Atom--------------------
 
@@ -83,3 +83,5 @@ Step 12: Finding the second smallest eigenvalue and corresponding eigenvector fo
 Newton's method iterations: 863
 Second Smallest Eigenvalue of Hydrogen: -0.122221888 Hartree (-3.325828567 eV, should be close to -3.4 eV)
 Norm of the Eigenvector of Hydrogen (Second Smallest Eigenvalue): 1.000000000 (should be close to 1.0)
+
+Step 13: Writing the wavefunctions of the smallest and second smallest eigenvalues to wavefunction.csv...

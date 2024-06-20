@@ -1,32 +1,35 @@
 Investigating Scaling of the Method:
-Matrix size: 1x1, Time: 7.834e-06 seconds
-Matrix size: 2x2, Time: 3.6456e-05 seconds
-Matrix size: 3x3, Time: 0.000816489 seconds
-Matrix size: 4x4, Time: 0.000640758 seconds
-Matrix size: 5x5, Time: 0.00287051 seconds
-Matrix size: 6x6, Time: 0.00188663 seconds
-Matrix size: 7x7, Time: 0.0143071 seconds
-Matrix size: 8x8, Time: 0.0104416 seconds
-Matrix size: 9x9, Time: 0.0181667 seconds
-Matrix size: 10x10, Time: 0.00836658 seconds
-Matrix size: 11x11, Time: 0.0730154 seconds
-Matrix size: 12x12, Time: 0.0620096 seconds
-Matrix size: 13x13, Time: 0.0414211 seconds
-Matrix size: 14x14, Time: 0.0496476 seconds
-Matrix size: 15x15, Time: 0.188895 seconds
-Matrix size: 16x16, Time: 0.101815 seconds
-Matrix size: 17x17, Time: 0.123999 seconds
-Matrix size: 18x18, Time: 0.344312 seconds
+Matrix size: 1x1, Time: 7.536e-06 seconds
+Matrix size: 2x2, Time: 7.0622e-05 seconds
+Matrix size: 3x3, Time: 0.000208231 seconds
+Matrix size: 4x4, Time: 0.00148876 seconds
+Matrix size: 5x5, Time: 0.000719411 seconds
+Matrix size: 6x6, Time: 0.00269507 seconds
+Matrix size: 7x7, Time: 0.00193713 seconds
+Matrix size: 8x8, Time: 0.00458009 seconds
+Matrix size: 9x9, Time: 0.0115938 seconds
+Matrix size: 10x10, Time: 0.243448 seconds
+Matrix size: 11x11, Time: 0.0138276 seconds
+Matrix size: 12x12, Time: 0.0143776 seconds
+Matrix size: 13x13, Time: 0.067661 seconds
+Matrix size: 14x14, Time: 0.0454669 seconds
+Matrix size: 15x15, Time: 0.141688 seconds
+Matrix size: 16x16, Time: 0.104251 seconds
+Matrix size: 17x17, Time: 0.28529 seconds
+Matrix size: 18x18, Time: 0.171575 seconds
+Matrix size: 19x19, Time: 0.200948 seconds
+Matrix size: 20x20, Time: 0.834129 seconds
+Matrix size: 21x21, Time: 0.700864 seconds
+Matrix size: 22x22, Time: 0.125113 seconds
+Matrix size: 23x23, Time: 0.132787 seconds
+Matrix size: 24x24, Time: 0.21372 seconds
 Retrying due to non-convergence...
-Matrix size: 19x19, Time: 0.259151 seconds
-Matrix size: 20x20, Time: 0.27901 seconds
-Matrix size: 21x21, Time: 0.69292 seconds
-Matrix size: 22x22, Time: 0.298259 seconds
-Matrix size: 23x23, Time: 0.516043 seconds
-Matrix size: 24x24, Time: 0.483031 seconds
-Matrix size: 25x25, Time: 0.270126 seconds
-Matrix size: 26x26, Time: 0.783535 seconds
-Matrix size: 27x27, Time: 1.84447 seconds
-Matrix size: 28x28, Time: 0.519937 seconds
-Matrix size: 29x29, Time: 0.784226 seconds
-Matrix size: 30x30, Time: 1.11562 seconds
+Matrix size: 25x25, Time: 0.596161 seconds
+Matrix size: 26x26, Time: 0.453193 seconds
+Matrix size: 27x27, Time: 0.609935 seconds
+Matrix size: 28x28, Time: 0.606901 seconds
+Retrying due to non-convergence...
+Retrying due to non-convergence...
+Retrying due to non-convergence...
+Matrix size: 29x29, Time: 1.67908 seconds
+Matrix size: 30x30, Time: 1.13938 seconds

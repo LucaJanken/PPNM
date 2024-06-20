@@ -32,35 +32,35 @@ If the values match closely, it confirms that the computed eigenpair is correct.
 --------------------Investigate Scaling of the Method (See scaling_results.txt)--------------------
 
 Newton's method iterations: 0
-Newton's method iterations: 8
-Newton's method iterations: 85
-Newton's method iterations: 36
-Newton's method iterations: 95
-Newton's method iterations: 47
-Newton's method iterations: 226
-Newton's method iterations: 117
-Newton's method iterations: 160
-Newton's method iterations: 57
-Newton's method iterations: 362
-Newton's method iterations: 221
-Newton's method iterations: 117
-Newton's method iterations: 119
-Newton's method iterations: 373
-Newton's method iterations: 161
-Newton's method iterations: 158
-Newton's method iterations: 379
-Newton's method iterations: 249
-Newton's method iterations: 229
-Newton's method iterations: 486
-Newton's method iterations: 190
-Newton's method iterations: 293
+Newton's method iterations: 17
+Newton's method iterations: 25
+Newton's method iterations: 102
+Newton's method iterations: 29
+Newton's method iterations: 70
+Newton's method iterations: 35
+Newton's method iterations: 58
+Newton's method iterations: 107
+Newton's method iterations: 1689
+Newton's method iterations: 79
+Newton's method iterations: 67
+Newton's method iterations: 240
+Newton's method iterations: 126
+Newton's method iterations: 340
+Newton's method iterations: 203
+Newton's method iterations: 440
+Newton's method iterations: 192
+Newton's method iterations: 220
+Newton's method iterations: 796
+Newton's method iterations: 513
+Newton's method iterations: 96
+Newton's method iterations: 86
+Newton's method iterations: 122
+Newton's method iterations: 291
+Newton's method iterations: 197
 Newton's method iterations: 232
-Newton's method iterations: 113
-Newton's method iterations: 277
-Newton's method iterations: 571
-Newton's method iterations: 156
-Newton's method iterations: 200
-Newton's method iterations: 260
+Newton's method iterations: 210
+Newton's method iterations: 484
+Newton's method iterations: 281
 
 --------------------Calculate Ground State Energy of Hydrogen Atom--------------------
 
